@@ -1,0 +1,40 @@
+{
+  "name": "lchhieu/push_view",
+  "description": "PushView package support append javascript to view in Laravel",
+  "keywords": [
+    "push view",
+    "laravel",
+    "package"
+  ],
+  "homepage": "https://github.com/lchhieu/push_view",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hieu Luong",
+      "email": "luongconghieu93@gmail.com"
+    }
+  ],
+  "type": "project",
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lchhieu\\PushView\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lchhieu\\PushView\\Providers\\ViewServiceProvider"
+      ],
+      "aliases": {
+        "Actions": "Lchhieu\\Facades\\Facades\\JavaScriptFacade"
+      }
+    }
+  }
+}

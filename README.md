@@ -9,7 +9,7 @@ PushView package support append javascript to view in Laravel
 composer require lchhieu/push_view
 ```
 
-If you're using Laravel 5.5 or later you can start using the package at this point. Eventy is auto-discovered by the Laravel framework.
+If you're using Laravel 5.5 or later you can start using the package at this point. PushView is auto-discovered by the Laravel framework.
 
 2. Add the service provider to the providers array in your `config/app.php`.
 

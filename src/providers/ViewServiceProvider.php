@@ -23,7 +23,7 @@ class ViewServiceProvider extends ServiceProvider
         });
 
         $this->publishes([
-            __DIR__ . '/../../config/push_view.php' => config_path('push_view.php'),
+            __DIR__ . '/../config/push_view.php' => config_path('push_view.php'),
         ]);
     }
 }

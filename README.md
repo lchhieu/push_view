@@ -1,5 +1,26 @@
 ## About
-PushView package support append javascript to view in Laravel
++ PushView package support append javascript to view in Laravel
++ Package will be extremely useful when you want to automatically translate text from php and the client side will receive the translated text
+
+```php
+
+class BaseController extends Controller
+{
+    public function index()
+    {
+        \PushViewJS::put([
+            'translate' => ['confirmation' => trans('labels.confirmation')]
+        ]);
+        
+        return view('welcome');
+    }
+}
+
+<script>
+window.Core = window.Core || {};
+Core.translate = {"confirmation":{"title":"Are you sure?","confirm_dirty_form":"Do you want to save the changes made before switching?","yes":"Yes","skip_continue":"Skip & Continue","cancel":"Cancel","delete":{"yes":"Yes delete it!","text":"You won't be able to revert this!"}}};
+</script>
+```
 
 ## Installation
 
